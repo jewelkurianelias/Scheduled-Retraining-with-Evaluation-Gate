@@ -1,0 +1,10 @@
+data:
+  master_dataset: "data/master_train.csv"
+  validation_dataset: "data/fixed_validation.csv"
+  incoming_dir: "data/incoming"
+
+model:
+  registered_name: "UsedCarPricePredictor"
+  target_column: "price"
+  features: ["year", "mileage", "condition_score"]
+  random_state: 42
